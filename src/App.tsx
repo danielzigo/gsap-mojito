@@ -1,15 +1,20 @@
 import { ScrollTrigger, SplitText } from "gsap/all"
 import gsap from "gsap"
+import Navbar from "./components/Navbar"
+import Hero from "./components/Hero"
 
 // This registration is only needed once, so it's good to have it here.
 gsap.registerPlugin(ScrollTrigger, SplitText)
 
 const App = () => {
-  return (
-    <div className="flex-center h-screen h-dvh">
-        <h1 className="text-3xl text-indigo-500">Hello, GSAP!</h1>
-    </div>
-  )
+	return (
+		<main>
+			<Navbar />
+			<Hero />
+			{/* Added temporarily to test the scroll trigger */}
+			<div className="h-dvh bg-black"></div>
+		</main>
+	)
 }
 
 export default App
