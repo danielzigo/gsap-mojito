@@ -67,9 +67,12 @@ const Hero = () => {
       },
     })
 
-    videoRef.current.onloadedmetadata = () => {
-      tl.to(videoRef.current, {
-        currentTime: videoRef.current.duration,
+    const video = videoRef.current
+    if (!video) return
+
+    video.onloadedmetadata = () => {
+      tl.to(video, {
+        currentTime: video.duration,
       })
     }
   }, [])
