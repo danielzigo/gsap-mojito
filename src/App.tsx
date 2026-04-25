@@ -11,8 +11,6 @@ const App = () => {
 		<main>
 			<Navbar />
 			<Hero />
-			{/* Added temporarily to test the scroll trigger */}
-			<div className="h-dvh bg-black"></div>
 		</main>
 	)
 }

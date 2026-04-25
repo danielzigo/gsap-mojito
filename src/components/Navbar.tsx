@@ -8,12 +8,13 @@ const Navbar = () => {
 			scrollTrigger: {
 				trigger: 'nav',
 				start: 'bottom top', // i.e. start: '[element position] [viewport position]'
+				scrub: true, // auto-reverses the animation when scrolled back to the top
 			}
 		});
 
-		navTween.fromTo('nav', { backgroundColor: 'transparent' }, {
+		navTween.fromTo('nav', { backgroundColor: 'transparent', backdropFilter: 'blur(0px)' }, {
 			backgroundColor: 'rgba(0, 0, 0, 0.5)',
-			backgroundFilter: 'blur(10px)',
+			backdropFilter: 'blur(10px)',
 			duration: 1,
 			ease: 'power1.inOut'
 		});
