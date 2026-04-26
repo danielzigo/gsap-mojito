@@ -55,7 +55,7 @@ const Hero = () => {
     // 120% top: when 120% of the video reaches the top of the screen (i.e. video has scrolled down), end animation
     // bottom top: when the bottom of the video reaches the top of the screen, also end animation
     const startValue = isMobile ? 'top 50%' : 'center 60%'
-    const endValue = isMobile ? '120% top' : isTablet ? '150% top' : 'bottom top'
+    const endValue = isMobile ? '120% top' : isTablet ? '170% top' : 'bottom top'
 
     // Video animation timeline
     const tl = gsap.timeline({
