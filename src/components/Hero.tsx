@@ -115,7 +115,7 @@ const Hero = () => {
         </div>
       </section>
 
-      <div className="video absolute inset-0">
+      <div className="video absolute inset-0 z-0 pointer-events-none">
         <video
           ref={videoRef}
           src="/videos/output.mp4"
